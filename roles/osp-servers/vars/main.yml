@@ -1,5 +1,11 @@
 ---
-# vars file for osp.servers
+# vars file for osp-instances
+#    webserver_name: web1
+#    databaseserver_name: db1
+#    flavor_name: m1.small
+#    webserver_group: webservers
+#    database_group: databaseservers
+#    deployment: dev
 osp_servers:
   frontend:
     name: frontend
@@ -37,3 +43,4 @@ osp_servers:
     security_group: db
     meta:
       - { group: appdbs, deployment_name: QA}
+
