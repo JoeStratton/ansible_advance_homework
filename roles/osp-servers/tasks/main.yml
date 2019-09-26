@@ -76,7 +76,7 @@
     host: "{{ item.public_v4 }}"
     port: 22
     search_regex: OpenSSH
-    timeout: 600
+    timeout: 1200
   delegate_to: "{{ inventory_hostname }}"
   with_items: 
     - "{{ result.ansible_facts.openstack_servers }}"
